@@ -1,0 +1,59 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	padding-top: 50px;
+}
+
+.bg-dark {
+	padding: 20px;
+	color: white;
+}
+
+.bg-dark ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.bg-dark li {
+	margin-bottom: 10px;
+}
+
+.bg-dark a {
+	color: white;
+	text-decoration: none;
+}
+
+.bg-dark a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+.fa-check {
+	color: green;
+	margin-right: 5px;
+}
+
+.btn-primary {
+	margin-top: 20px;
+}
+
+.col-md-4 h3 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.col-md-4 p {
+	margin-bottom: 20px;
+}
+
+.col-md-4 a.btn {
+	margin-top: 0;
+}
+
+@media (max-width: 767.98px) {
+	.col-md-8, .col-md-4 {
+		margin-bottom: 20px;
+	}
+}
