@@ -1,59 +1,31 @@
-body {
-	font-family: 'Roboto', sans-serif;
-	padding-top: 50px;
+section.khoa-hoc {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-.bg-dark {
-	padding: 20px;
-	color: white;
+section.khoa-hoc h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.bg-dark ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+section.khoa-hoc p {
+    margin-bottom: 10px;
 }
 
-.bg-dark li {
-	margin-bottom: 10px;
+section.khoa-hoc:hover {
+    background-color: red;
 }
 
-.bg-dark a {
-	color: white;
-	text-decoration: none;
+section.khoa-hoc:hover h2 {
+    color: white;
 }
 
-.bg-dark a:hover {
-	text-decoration: underline;
+section.khoa-hoc:hover p {
+    color: white;
 }
-
-h1 {
-	margin-top: 0;
-}
-
-.fa-check {
-	color: green;
-	margin-right: 5px;
-}
-
-.btn-primary {
-	margin-top: 20px;
-}
-
-.col-md-4 h3 {
-	margin-top: 0;
-	margin-bottom: 20px;
-}
-.col-md-4 p {
-	margin-bottom: 20px;
-}
-
-.col-md-4 a.btn {
-	margin-top: 0;
-}
-
-@media (max-width: 767.98px) {
-	.col-md-8, .col-md-4 {
-		margin-bottom: 20px;
-	}
+footer{
+    background-color: aqua;
+    margin: 20px 0 0 0;
+    text-align: center;
 }
