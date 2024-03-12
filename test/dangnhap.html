@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="vi">
-
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title ng-controller="TitleController">{{pageTitle}}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title ng-controller="TitleController">{{pageTitle}}</title>
 </head>
-
 <body>
     <div class="container-fulid">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -56,35 +54,44 @@
         </nav>
     </div>
     <div class="container">
-        <h2>Liên hệ với chúng tôi</h2>
-        <form action="#">
-            <div class="form-group">
-                <label for="name">Họ và tên:</label>
-                <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên">
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Nhập email">
-            </div>
-            <div class="form-group">
-                <label for="message">Nội dung:</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Gửi</button>
-        </form>
+        <main class="form-signin w-100 m-auto">
+            <form style="margin: 30px 0px 30px 0px;">
+              <h1 class="h3 mb-3 fw-normal" ng-controller="TitleController">{{pageTitle}}</h1>
+          
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <br>
+
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <br>
+          
+              <div class="form-check text-start my-3">
+                <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Remember me
+                </label>
+              </div>
+              <button class="btn btn-primary w-100 py-2" type="submit">Đăng Nhập</button>
+            </form>
+          </main>
     </div>
-    
 
     <footer>
         <p>&copy; 2024 - Phong</p>
     </footer>
     
-</div>
+    </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-crossorigin="anonymous"></script>
-
 </html>
