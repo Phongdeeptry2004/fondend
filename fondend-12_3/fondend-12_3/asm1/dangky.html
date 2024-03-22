@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title ng-controller="TitleController">{{pageTitle}}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fulid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="col-sm-4">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Trang Chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="lienhe.html">Liên Hệ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dathang.html">Đặt Khoá Học</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="container-fluid justify-content-center text-center">
+                    <div class="row ">
+                        <div class="col">
+                            <a href="dangky.html" class="btn btn-light">Đăng ký</a>
+                        </div>
+                        <div class="col">
+                            <a href="dangnhap.html" class="btn btn-info">Đăng Nhập</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container" >
+        <main class="form-signin w-100 m-auto" >
+            <form style="margin: 30px 0px 30px 0px;">
+                <h1 class="h3 mb-3 fw-normal">Đăng Ký</h1>
+              
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="fullName" placeholder="Họ và tên">
+                  <label for="fullName">Họ và tên</label>
+                </div>
+              <br>
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <br>
+              
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <br>
+              
+                <div class="form-floating">
+                  <input type="tel" class="form-control" id="phoneNumber" placeholder="Nhập số điện thoại">
+                  <label for="phoneNumber">Số điện thoại:</label>
+                </div>
+                <br>
+              
+                <div class="form-group">
+                  <select class="form-control" id="gender">
+                    <option value="">Chọn giới tính</option>
+                    <option value="male">Nam</option>
+                    <option value="female">Nữ</option>
+                  </select>
+                </div>
+              
+                <div class="form-check text-start my-3">
+                  <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Remember me
+                  </label>
+                </div>
+              
+                <button class="btn btn-primary w-100 py-2" type="submit">Đăng Ký</button>
+              </form>
+              
+          </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 - Phong</p>
+    </footer>
+    
+</div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script>
+
+</html>

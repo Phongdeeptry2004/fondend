@@ -1,0 +1,31 @@
+section.khoa-hoc {
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+section.khoa-hoc h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+section.khoa-hoc p {
+  margin-bottom: 10px;
+}
+
+section.khoa-hoc:hover {
+  background-color: red;
+}
+
+section.khoa-hoc:hover h2 {
+  color: white;
+}
+
+section.khoa-hoc:hover p {
+  color: white;
+}
+footer{
+  background-color: aqua;
+  margin: 20px 0 0 0;
+  text-align: center;
+}

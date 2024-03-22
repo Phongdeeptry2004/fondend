@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title ng-controller="TitleController">{{pageTitle}}</title>
+</head>
+<body>
+
+    <div class="container-fulid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="col-sm-4">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Trang Chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Liên Hệ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="booking.html">Đặt Khoá Học</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="container-fluid justify-content-center text-center">
+                    <div class="row ">
+                        <div class="col">
+                            <a href="dangky.html" class="btn btn-light">Đăng ký</a>
+                        </div>
+                        <div class="col">
+                            <a href="dangnhap.html" class="btn btn-info">Đăng Nhập</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h2 ng-controller="TitleController">{{pageTitle}}</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="name">Họ và tên:</label>
+                <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Nhập email">
+            </div>
+            <div class="form-group">
+                <label for="message">Nội dung:</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Gửi</button>
+        </form>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024 - Phong</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+</body>
+</html>

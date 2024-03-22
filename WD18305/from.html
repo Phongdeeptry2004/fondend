@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myController" >
+        <form>
+            <!-- cần quan tâm:
+                - ng-model: được sử dụng để buộc dữ liệu 2 chiều 
+                    1: từ $scope
+                    2: từ Điều khiển của from như các thẻ input, select, ... 
+                Lưu ý: đặt khu vực cho ng-model thì cần 1 $scope tương ứng.
+                nếu chỉ đặt mỗi tên thì nó sẽ rất lâu lên ta sử dụng cách sau để tạo một object : nameObject.Nameinput
+                -->
+            <!-- <label for="a">a: </label>
+            <input id="a" type="number" ng-model="input.a">
+            <label for="b">b: </label>
+            <input id="b" type="number" ng-model="input.b"> -->
+            <!-- radio -->
+            <!--
+            <label for="radio">Năm sinh</label> <br>
+            <input type="radio" id="radio" ng-model="namsinh" value="2002">2002 <br>
+            <input type="radio" id="radio" ng-model="namsinh" value="2003">2003 <br>
+            <input type="radio" id="radio" ng-model="namsinh" value="2004">2004 <br> -->
+            <!-- checkbox     -->
+            <!-- <label for="tes">Danh sách</label>
+            <input type="checkbox" id="tes" ng-model="input.danhsach.All" id="">All
+            <input type="checkbox" id="tes" ng-model="input.danhsach.A" ng-checked="input.danhsach.All" id="">danh sách 1
+            <input type="checkbox" id="tes" ng-model="input.danhsach.B"  ng-checked="input.danhsach.All" id="">danh sách 2
+            <input type="checkbox" id="tes" ng-model="input.danhsach.C"  ng-checked="input.danhsach.All" id="">danh sách 3 -->
+
+            <!-- select -->
+            <!-- cấp 1 -->
+            <br>
+            <!-- <label for="select">Chọn đồ chơi</label><br>
+            <select id="select" ng-model="input.select1">
+                <option value="">Chọn đồ chơi</option>
+                <option value="1">kiếm</option>
+                <option value="3">phóng lợn</option>
+                <option value="2">hoa cải</option>
+            </select>  -->
+            <br>
+            <!-- cấp 2 -->
+            <!-- <br>
+                <label for="select2">Danh mục</label>
+                <select id="select2" ng-model="danhmucid">
+                <option ng-repeat="dm in danhmuc" value="{{dm.id}}">{{dm.name}}</option>
+                </select> -->
+            
+                <!-- ng-option  -->
+                <label for="select3">ng-option</label>
+                <select id="select3" ng-model="danhmucid" ng-options="dm.id as dm.name for dm in danhmuc"></select>
+
+                <button type="submit" ng-click="submit()">gửI</button>
+
+        </form>
+    </div>
+</body>
+<script src="Controllers/from.js"></script>
+</html>
