@@ -1,0 +1,88 @@
+{
+    "LienHe": [
+        {
+            "Name": "Name 1",
+            "Email": "Email 1",
+            "Content": "Content 1"
+        },
+        {
+            "Name": "Name 2",
+            "Email": "Email 2",
+            "Content": "Content 2"
+        },
+        {
+            "Name": "Name 3",
+            "Email": "Email 3",
+            "Content": "Content 3"
+        }
+    ],
+    "DatKhoaHoc": [
+        {
+            "Name": "Name 1",
+            "Email": "Email 1",
+            "Phone": "Phone 1",
+            "Gender": "Gender 1",
+            "KhoaHoc": "KhoaHoc 1",
+            "Content": "Content 1",
+            "HinhThucThanhToan": "HinhThucThanhToan 1"
+        },
+        {
+            "Name": "Name 2",
+            "Email": "Email 2",
+            "Phone": "Phone 2",
+            "Gender": "Gender 2",
+            "KhoaHoc": "KhoaHoc 2",
+            "Content": "Content 2",
+            "HinhThucThanhToan": "HinhThucThanhToan 2"
+        },
+        {
+            "Name": "Name 3",
+            "Email": "Email 3",
+            "Phone": "Phone 3",
+            "Gender": "Gender 3",
+            "KhoaHoc": "KhoaHoc 3",
+            "Content": "Content 3",
+            "HinhThucThanhToan": "HinhThucThanhToan 3"
+        }
+    ],
+    "TaiKhoan": [
+        {
+            "Name": "Name 1",
+            "Email": "Email 1",
+            "Pass": "Pass 1",
+            "Phone": "Phone 1",
+            "Gender": "Gender 1"
+        },
+        {
+            "Name": "Name 2",
+            "Email": "Email 2",
+            "Pass": "Pass 2",
+            "Phone": "Phone 2",
+            "Gender": "Gender 2"
+        },
+        {
+            "Name": "Name 3",
+            "Email": "Email 3",
+            "Pass": "Pass 3",
+            "Phone": "Phone 3",
+            "Gender": "Gender 3"
+        }
+    ],
+    "KhoaHoc": [
+        {
+            "Name": "Name 1",
+            "Description": "Description 1",
+            "Price": "Price 1"
+        },
+        {
+            "Name": "Name 2",
+            "Description": "Description 2",
+            "Price": "Price 2"
+        },
+        {
+            "Name": "Name 3",
+            "Description": "Description 3",
+            "Price": "Price 3"
+        }
+    ]
+}
