@@ -1,0 +1,55 @@
+<!-- 
+    angularjs là một frameworks của js  
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <!--Định nghĩa phạm vi sử dụng angularjs -->
+    <div ng-controller="demoController">
+        Mã sinh viên: {{student.msv}} <br>
+        Họ Tên: {{student.name}} <br>
+        Năm sinh: {{student.year}} <br>
+        <h1 ng-if="student.tinhtrang==true && student.year>=2004">10 năm nữa làm fapsu </h1>
+        <br>
+        mã sản phẩm: {{sanpham.msp}} <br>
+        tên sản phẩm: {{sanpha.tensp}} <br> 
+        giá bán: {{sanpham.price}}$ <br>
+        <h1 ng-if="sanpham.price >=1000">Hàng sịn sò con bò</h1>
+        <span ng-switch="student.year">
+            <span ng-switch-when="2004">Cấp 1</span>
+            <span ng-switch-when="2003">Cấp 2</span>
+            <span ng-switch-when="2002">Cấp 1</span>
+        </span>
+        <table border="1">
+            <tr>
+                <th>Tên</th>
+                <th>Số CCCD</th>
+                <th>Tuổi</th>
+                <th>Giới Tính</th>
+                <th>Nghĩa Vụ</th>
+            </tr>
+            <tr ng-repeat="person in TTND">
+                <td>{{person.ten}}</td>  
+                <td>{{person.cmt}}</td>
+                <td>{{2024 - person.year}}</td>
+                <td>{{person.sex == 1 ? 'Nam' : 'Nữ'}}</td>
+                <td ng-if="2024 - person.year >= 18">{{person.sex == 1 ? 'Đi nghĩa vụ' : 'Không đi nghĩa vụ'}}</td>
+                <td ng-if="2024 - person.year < 18">Chưa đủ tuổi</td>
+            </tr>
+        </table>
+        <!-- Định nghĩa ra phạm vi giao diện được điều hướng bởi controller -->
+    </div>
+</body>
+<script src="Controllers/app.js">
+  
+</script>
+
+</html>

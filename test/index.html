@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title ng-controller="TitleController">{{pageTitle}}</title>
+</head>
+<body>
+    <div class="container-fulid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="col-sm-4">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Trang Chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Liên Hệ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="booking.html">Đặt Khoá Học</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="container-fluid justify-content-center text-center">
+                    <div class="row ">
+                        <div class="col">
+                            <a href="dangky.html" class="btn btn-light">Đăng ký</a>
+                        </div>
+                        <div class="col">
+                            <a href="dangnhap.html" class="btn btn-info">Đăng Nhập</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img/banner1.jpg" class="d-block w-100" alt="img/banner1.jpg">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/banner2.jpg" class="d-block w-100" alt="img/banner2.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner3.jpg" class="d-block w-100" alt="img/banner3.jpg">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h1 class="text-center" ng-controller="TitleController">{{pageTitle}}</h1>
+        <div class="row" style="margin: 20px 0 10px 0;">
+            <div class="col-sm-4">
+                <section class="khoa-hoc">
+                    <img src="img/image1.jpg" style="width: 100%;border-radius: 50%;" alt="">
+                    <h2>Khóa học cài đặt hệ điều hành, phần mềm & Tháo lắp Laptop, PC, MacBook & Lắp đặt hệ thống mạng
+                    </h2>
+                    <p>Chuyên đào tạo và cung cấp đầy đủ những kiến thức, kỹ năng cơ bản về máy tính, laptop. Đan xen
+                        chặt chẽ giữa lý thuyết và thực hành. Được đi thực tập tại hệ thống sửa chữa máy tính uy tín.
+                    </p>
+                </section>
+            </div>
+            <div class="col-sm-4">
+                <section class="khoa-hoc">
+                    <img src="img/image1.jpg" style="width: 100%;border-radius: 50%;" alt="">
+                    <h2>Khóa học Điện từ Cơ bản Laptop</h2>
+                    <p>Chuyên đào tạo các kiến thức chuyên sâu về phần cứng Laptop MacBook. Đan xen chất chẽ giữa lý
+                        thuyết và thực hành. Được đi thực tập tại hệ thống sửa chữa máy tính uy tín.</p>
+                </section>
+            </div>
+            <div class="col-sm-4">
+                <section class="khoa-hoc">
+                    <img src="img/image1.jpg" style="width: 100%;border-radius: 50%;" alt="">
+                    <h2>Khóa học cài đặt hệ điều hành, phần mềm & Tháo lắp Laptop, PC, MacBook & Lắp đặt hệ thống mạng
+                    </h2>
+                    <h2>Khóa học Sửa Laptop Chuyên Nghiệp</h2>
+                    <p>Chuyên đào tạo kỹ năng nhận biết và sửa chữa các linh kiện điện tử cơ bản. Đan xen chất chẽ giữa
+                        lý thuyết và thực hành. Được đi thực tập tại hệ thống sửa chữa máy tính uy tín.</p>
+                </section>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-4">
+                <section class="khoa-hoc">
+                    <img src="img/image1.jpg" style="width: 100%;border-radius: 50%;" alt="">
+                    <h2>Khóa học cài đặt hệ điều hành, phần mềm & Tháo lắp Laptop, PC, MacBook & Lắp đặt hệ thống mạng
+                    </h2>
+                    <p>Chuyên đào tạo và cung cấp đầy đủ những kiến thức, kỹ năng cơ bản về máy tính, laptop. Đan xen
+                        chặt chẽ giữa lý thuyết và thực hành. Được đi thực tập tại hệ thống sửa chữa máy tính uy tín.
+                    </p>
+                </section>
+            </div>
+            <div class="col-sm-4">
+                <section class="khoa-hoc">
+                    <img src="img/image1.jpg" style="width: 100%;border-radius: 50%;" alt="">
+                    <h2>Khóa học Điện từ Cơ bản Laptop</h2>
+                    <p>Chuyên đào tạo các kiến thức chuyên sâu về phần cứng Laptop MacBook. Đan xen chất chẽ giữa lý
+                        thuyết và thực hành. Được đi thực tập tại hệ thống sửa chữa máy tính uy tín.</p>
+                </section>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <a href="booking.html" class="btn btn-success">Đăng Ký Ngay</a>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 - Phong</p>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+</body>
+</html>

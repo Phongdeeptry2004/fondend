@@ -1,160 +1,157 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header với Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Đặt Vé</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="lienhe.html">Contach Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" ></a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
+    <div class="container-fulid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="col-sm-4">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Trang Chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="lienhe.html">Liên Hệ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dathang.html">Đặt Khoá Học</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
             </div>
-        </nav>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/image1.jpg" class="d-block w-100" alt="img/image1.jpg">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/image2.jpg" class="d-block w-100" alt="img/image2.jpg">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/image3.jpg" class="d-block w-100" alt="img/image3.jpg">
+            <div class="col-sm-4">
+                <div class="container-fluid justify-content-center text-center">
+                    <div class="row ">
+                        <div class="col">
+                            <a href="dangky.html" class="btn btn-light">Đăng ký</a>
+                        </div>
+                        <div class="col">
+                            <a href="dangnhap.html" class="btn btn-info">Đăng Nhập</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img/banner1.jpg" class="d-block w-100" alt="img/banner1.jpg">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/banner2.jpg" class="d-block w-100" alt="img/banner2.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner3.jpg" class="d-block w-100" alt="img/banner3.jpg">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="mt-5">
-            <h2>Chào mừng đến với trang đặt vé máy bay</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tellus sit amet elit gravida
-                euismod. Nullam ultrices tortor a velit ullamcorper, vel fermentum elit tempor.</p>
-            <p>Phasellus nec metus ut libero consectetur rhoncus. Duis eu felis a nisl aliquam fermentum. Nunc
-                volutpat cursus lorem, nec bibendum arcu malesuada id.</p>
+        <div class="row" style="margin: 20px 0 10px 0;">
+            <div class="col-sm-4">
+                <section class="khoa-hoc">
+                    <img src="img/image1.jpg" style="width: 100%;border-radius: 50%;" alt="">
+                    <h2>Khóa học cài đặt hệ điều hành, phần mềm & Tháo lắp Laptop, PC, MacBook & Lắp đặt hệ thống mạng
+                    </h2>
+                    <p>Chuyên đào tạo và cung cấp đầy đủ những kiến thức, kỹ năng cơ bản về máy tính, laptop. Đan xen
+                        chặt chẽ giữa lý thuyết và thực hành. Được đi thực tập tại hệ thống sửa chữa máy tính uy tín.
+                    </p>
+                </section>
+            </div>
+            <div class="col-sm-4">
+                <section class="khoa-hoc">
+                    <img src="img/image1.jpg" style="width: 100%;border-radius: 50%;" alt="">
+                    <h2>Khóa học Điện từ Cơ bản Laptop</h2>
+                    <p>Chuyên đào tạo các kiến thức chuyên sâu về phần cứng Laptop MacBook. Đan xen chất chẽ giữa lý
+                        thuyết và thực hành. Được đi thực tập tại hệ thống sửa chữa máy tính uy tín.</p>
+                </section>
+            </div>
+            <div class="col-sm-4">
+                <section class="khoa-hoc">
+                    <img src="img/image1.jpg" style="width: 100%;border-radius: 50%;" alt="">
+                    <h2>Khóa học cài đặt hệ điều hành, phần mềm & Tháo lắp Laptop, PC, MacBook & Lắp đặt hệ thống mạng
+                    </h2>
+                    <h2>Khóa học Sửa Laptop Chuyên Nghiệp</h2>
+                    <p>Chuyên đào tạo kỹ năng nhận biết và sửa chữa các linh kiện điện tử cơ bản. Đan xen chất chẽ giữa
+                        lý thuyết và thực hành. Được đi thực tập tại hệ thống sửa chữa máy tính uy tín.</p>
+                </section>
+            </div>
         </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-4">
+                <section class="khoa-hoc">
+                    <img src="img/image1.jpg" style="width: 100%;border-radius: 50%;" alt="">
+                    <h2>Khóa học cài đặt hệ điều hành, phần mềm & Tháo lắp Laptop, PC, MacBook & Lắp đặt hệ thống mạng
+                    </h2>
+                    <p>Chuyên đào tạo và cung cấp đầy đủ những kiến thức, kỹ năng cơ bản về máy tính, laptop. Đan xen
+                        chặt chẽ giữa lý thuyết và thực hành. Được đi thực tập tại hệ thống sửa chữa máy tính uy tín.
+                    </p>
+                </section>
+            </div>
+            <div class="col-sm-4">
+                <section class="khoa-hoc">
+                    <img src="img/image1.jpg" style="width: 100%;border-radius: 50%;" alt="">
+                    <h2>Khóa học Điện từ Cơ bản Laptop</h2>
+                    <p>Chuyên đào tạo các kiến thức chuyên sâu về phần cứng Laptop MacBook. Đan xen chất chẽ giữa lý
+                        thuyết và thực hành. Được đi thực tập tại hệ thống sửa chữa máy tính uy tín.</p>
+                </section>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <a href="formkhoahoc.html" class="btn btn-success">Đăng Ký Ngay</a>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 - Phong</p>
+        </footer>
+        
     </div>
+
+   
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-</html> -->
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Bootstrap Layout Example</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-3 bg-dark text-light">
-				<h3>MegetAIn.com</h3>
-				<ul>
-					<li><a href="#">Trang chủ</a></li>
-					<li><a href="#">Giới thiệu</a></li>
-					<li><a href="#">Liên hệ</a></li>
-				</ul>
-			</div>
-			<div class="col-md-9">
-				<div class="row">
-					<div class="col-md-8">
-						<h1>Chuyến bay giá rẻ</h1>
-						<form>
-							<div class="form-group">
-								<label for="from">Điểm khởi hành</label>
-								<input type="text" class="form-control" id="from" placeholder="Nhập điểm khởi hành">
-							</div>
-							<div class="form-group">
-								<label for="to">Điểm đến</label>
-								<input type="text" class="form-control" id="to" placeholder="Nhập điểm đến">
-							</div>
-							<div class="form-group">
-								<label for="date">Ngày đi</label>
-								<input type="date" class="form-control" id="date">
-							</div>
-							<button type="submit" class="btn btn-primary">Tìm chuyến bay</button>
-						</form>
-					</div>
-					<div class="col-md-4">
-						<h3>Đặt vé với chúng tôi</h3>
-						<ul>
-							<li><i class="fas fa-check"></i> Hàng loạt chuyến bay từ các hãng hàng không uy tín</li>
-							<li><i class="fas fa-check"></i> Giá vé tốt nhất</li>
-							<li><i class="fas fa-check"></i> Hỗ trợ trực tuyến 24/7</li>
-						</ul>
-					</div>
-				</div>
-                <div class="col-md-4">
-					<h3>Tuyển dụng</h3>
-					<p>MegetAIn.com luôn tìm kiếm các thành viên talent, có niềm đam mê với lĩnh vực du lịch và muốn phát triển một môi trường làm việc tích cực.</p>
-					<a href="#" class="btn btn-primary">Xem thêm</a>
-				</div>
-				<div class="col-md-4">
-					<h3>Liên hệ với chúng tôi</h3>
-					<ul>
-						<li><i class="fas fa-map-marker-alt"></i> 1234 Đường số 1, Quận 1, TP. Hồ Chí Minh</li>
-						<li><i class="fas fa-envelope"></i> <a href="mailto:info@megetain.com">info@megetain.com</a></li>
-						<li><i class="fas fa-phone"></i> 028-12345678</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
 </html>
